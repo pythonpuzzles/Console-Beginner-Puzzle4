@@ -36,6 +36,19 @@ def puzzle_a():
     print('\nPuzzle A')
     print('~~~~~~~~~')
 
+    answer = 7
+
+    number = int(input("How many dead hookers does it take to change a lightbulb?: "))
+
+    if number == answer:
+        print(f"That's what I thought. I sent {answer} down, but my basement is STILL dark.")
+    elif number > answer:
+        print(f"Yeah, got to be more than {answer}, because my basement is STILL dark.")
+    elif number < answer:
+        print(f"Well, I know it's more than {answer}, because my basement is STILL dark.")
+    else:
+        print(f"Wow. Unexpected input!")
+
 
 def example_b():
     print('\nExample B')
@@ -86,6 +99,44 @@ def puzzle_b():
     print('\nPuzzle B')
     print('~~~~~~~~~')
 
+    print("Welcome to North Jersey Pizzeria. What would you like?")
+    print("1: Pizza")
+    print("2: Calzone")
+    print("3: Lasagne")
+
+    choice = int(input("Please enter the number of your selection: "))
+
+    if choice == 1:
+
+        meal_size = input("\nWould you like a Regular or Large? Enter \"r\" or \"l\":")
+
+        if meal_size == "r":
+            print("One regular pizza, coming up!")
+        elif meal_size == "l":
+            print("One large pizza, coming up!")
+        else:
+            print("Tony Soprano owns this place, so you better order something")
+    elif choice == 2:
+        meal_size = input("\nWould you like a Regular or Large? Enter \"r\" or \"l\":")
+
+        if meal_size == "r":
+            print("One regular calzone, coming up!")
+        elif meal_size == "l":
+            print("One large calzone, coming up!")
+        else:
+            print("Tony Soprano owns this place, so you better order something")
+    elif choice == 3:
+        meal_size = input("\nWould you like a Regular or Large? Enter \"r\" or \"l\":")
+
+        if meal_size == "r":
+            print("One regular lasagne, coming up!")
+        elif meal_size == "l":
+            print("One large lasagne, coming up!")
+        else:
+            print("Tony Soprano owns this place, so you better order something")
+    else:
+        print("Just choose 1,2 or 3!")
+
 
 def example_c():
     print('\nExample C')
@@ -132,17 +183,37 @@ def puzzle_c():
     print('\nPuzzle C')
     print('~~~~~~~~~~~')
 
+    number = random.randint(1, 10)
+
+    user_input = input("What number am I thinking of? It's between 1 and 10: ")
+
+    guess = 0
+    if user_input is not None and user_input != "":
+        guess = int(user_input)
+
+        if guess >= 1 and guess <= 10:
+            if guess == number:
+                print("Bingo! Correct guess!")
+            elif guess == number + 1 or guess == number - 1:
+                print(f"Close! Out by one! Number was {number}")
+            else:
+                print(f"Wrong! It was {number}")
+        else:
+            print(f"Error. You have to enter a number between 1 and 10")
+    else:
+        print("Error. You can't just enter blank space")
+
 
 if __name__ == '__main__':
 
     # Run the puzzles
 
-    example_a()
-    # puzzle_a()
+    # example_a()
+    puzzle_a()
 
-    example_b()
-    # puzzle_b()
+    # example_b()
+    puzzle_b()
 
-    example_c()
-    # puzzle_c()
+    # example_c()
+    puzzle_c()
 
