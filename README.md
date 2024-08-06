@@ -1,5 +1,5 @@
-# Python Console Beginners Premium Puzzle 4
-## The If Else Conditional
+# Python Console Beginners Puzzle 4
+### The If Else Conditional
 
 ### View the YouTube Video: 
 
