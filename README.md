@@ -1,6 +1,5 @@
-# Python Console Beginners Premium Puzzle 4
-## Thank you, for contributing to the channel! 
-### Your money helps support me and allows me to keep making these learning puzzles.
+# Python Console Beginners Puzzle 4
+### The If Else Conditional
 
 ### View the YouTube Video: 
 
