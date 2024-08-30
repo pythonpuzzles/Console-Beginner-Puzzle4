@@ -2,6 +2,9 @@
 ### The If Else Conditional
 
 ### View the YouTube Video: 
+[https://youtu.be/6qOFRIh7ChI](https://youtu.be/6qOFRIh7ChI)
+
+Our Website: [https://www.pythonpuzzles.com/](https://www.pythonpuzzles.com/)
 
 
 ## Puzzles
